@@ -79,7 +79,7 @@ def DZ1z8():
         print(f"Одним разломом нельзя получить {c} дольки шоколадки.")
 
 def SelectTask():
-    a = int (input("Введите номер задачи (2, 4, 6, 8): "))
+    a = int(input("Введите номер задачи (2, 4, 6, 8): "))
     if a == 2:
         DZ1z2()
     elif a == 4:
@@ -88,10 +88,8 @@ def SelectTask():
         DZ1z6()
     elif a == 8:
         DZ1z8()
-    elif a == exit:
-        break
     else:
         print("Такого номера задачи нет.")
-    SelectTask()
+    
 
 SelectTask()
