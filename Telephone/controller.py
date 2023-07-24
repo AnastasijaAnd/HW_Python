@@ -9,19 +9,19 @@ def main():
         if num == 1:
             res = add_name_and_phone()
             write_name(res)
-            print('Записано\n')
+            print('Успешно записано\n')
         if num == 2:
             print('Телефонный справочник:\n')
             all_phone_book()    
         if num == 3:
             print(*search_smth_in_phone_book())
-            print('Найдено\n')
+            print('Успешно найдено\n')
         if num == 4:
             change_smth_in_phone_book()
-            print('Изменено\n')
+            print('Успешно изменено\n')
         if num == 5:
             delete_smth_in_phone_book()
-            print('Удалено\n')
+            print('Успешно удалено\n')
 
 main()
 
