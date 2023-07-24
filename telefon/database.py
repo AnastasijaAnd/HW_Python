@@ -1,13 +1,13 @@
 from view import *
 
 def write_name(name):
-    with open("telphone.txt", "a", encoding="UTF-8") as file:
+    with open("telephone.txt", "a", encoding="UTF-8") as file:
         file.write(name)
 
 def search_smth_in_phone_book():
     number = input_search_option()
     look_world = input_want_to_find()
-    with open("telphone.txt", "r", encoding="UTF-8") as file:
+    with open("telephone.txt", "r", encoding="UTF-8") as file:
         lst = file.readlines()
         fnd_lst = []
         if number == 1:
@@ -26,7 +26,7 @@ def search_smth_in_phone_book():
  
 
 def change_smth_in_phone_book():
-    with open("telphone.txt", "r", encoding="UTF-8") as file:
+    with open("telephone.txt", "r", encoding="UTF-8") as file:
         lst = file.readlines()
         print("Что нужно изменить?:")
         print(*search_smth_in_phone_book())
@@ -57,5 +57,4 @@ def all_phone_book():
         lst = file.readlines()
         for row in lst:
             print(row)
-
 
