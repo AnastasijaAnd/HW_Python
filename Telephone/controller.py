@@ -23,5 +23,6 @@ def main():
             delete_smth_in_phone_book()
             print('Успешно удалено\n')
 
+
 main()
 
